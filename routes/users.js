@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 let plm = require("passport-local-mongoose")
 const userSchema = mongoose.Schema({
   fullname: String,
