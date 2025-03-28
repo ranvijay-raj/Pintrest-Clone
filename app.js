@@ -46,5 +46,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+mongoose.connect(process.env.DATABASE_URL, { 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true 
+})
+.then(() => console.log('MongoDB Connected'))
+.catch((err) => console.log(err));
 
 module.exports = app;
