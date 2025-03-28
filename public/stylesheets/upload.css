@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upload{
+    height: 100vh;
+    width: 50vw;
+    border: 0.2vw solid wheat;
+}
+#imgUpload{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 0.2vw solid wheat;
+}
+label{
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: blueviolet;
+}
+#details{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.inputElem{
+    padding: 1vw;
+    outline: none;
+    border: 0.2vw solid blue;
+}
+#details input{
+    width: 70%;
+    border-radius: 1vw;
+}
+#details select{
+    width: 35%;
+    font-size: 1.1em;
+}
+#details button{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 2vw;
+}
+#view{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width: 800px){
+    #upload{
+        width: 100%;
+    }
+    #imgUpload{
+        height: 25vh;
+    }
+    #details{
+        height: 75vh;
+    }
+    .inputElem{
+        padding: 3vw;
+    }
+}

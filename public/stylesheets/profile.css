@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#panel{
+    width: 100%;
+    height: 25vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    height: 4vw;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav div img{
+  height: 80%;
+  width: auto;
+  margin-right: 1vw;
+}
+nav div a{
+  color: red;
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 2vw;
+}
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 5vw);
+}
+#pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10vw;
+    width: 10vw;
+    background-color: #dadada;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+#dp{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.add{
+    display: flex;
+    background-color: red;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    border: none;
+    padding: 1vw;
+    border-radius: 1vw;
+    width: 10vw;
+}
+#posts{
+  margin-top: 2vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#posts img {
+    height: auto;
+    width: 100%;
+  }
+.snip1527 {
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1.6vw;
+  margin: 1vw 1%;
+  max-width: 31vw;
+  min-width: 25vw;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 2.5vw 2vw 2.5vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 2.64vw;
+  font-weight: 700;
+  min-height: 4.8vw;
+  min-width: 4.8vw;
+  padding: 1vw 0;
+  position: absolute;
+  right: 1.5vw;
+  text-align: center;
+  text-transform: uppercase;
+  top: -2.5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 1.4vw;
+}
+
+.snip1527 .date .month {
+  font-size: 1.1vw;
+}
+
+.snip1527 h3{
+  margin: 0;
+  padding: 0;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.04vw;
+  margin-bottom: 0.5vw;
+  font-size: 200%;
+}
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 800px){
+  nav{
+    margin: 2vw 0;
+  }
+  #panel{
+      height: 60vw;
+  }
+  .add{
+    width: 20vw;
+    padding: 2vw;
+  }
+  #pic{
+      height: 25vw;
+      width: 25vw;
+  }
+  .snip1527{
+    max-width: 74.5vw;
+    min-width: 60vw;
+  }
+  .snip1527 .date {
+    font-size: 3vw;
+  }
+  .snip1527 .date{
+    min-height: 11vw;
+    min-width: 11vw;
+    top: -9vw;
+  }
+  .snip1527 h3{
+    font-size: 500%;
+  }
+  .flex{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+}
+@media only screen and (max-width: 360px){
+  #panel{
+      height: 65vw;
+  }
+  .add{
+    width: 25vw;
+    padding: 3vw;
+  }
+}
