@@ -1,5 +1,3 @@
-const mongoose = require("mongoose")
-mongoose.connect(process.env.PORT)
 let plm = require("passport-local-mongoose")
 const userSchema = mongoose.Schema({
   fullname: String,
